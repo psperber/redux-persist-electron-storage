@@ -1,0 +1,1 @@
+# redux-persist-electron-storage
