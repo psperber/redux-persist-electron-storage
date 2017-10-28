@@ -2,14 +2,21 @@
   "name": "redux-persist-electron-storage",
   "version": "1.0.0",
   "description": "Redux persist adaptor for electon-store",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "url": "https://github.com/psperber/redux-persist-electron-storage",
     "type": "git"
   },
   "author": "Philipp Sperber",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
   "dependencies": {
     "electron-store": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
