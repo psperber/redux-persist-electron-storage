@@ -1,20 +1,25 @@
-const Store = require('electron-store');
-const store = new Store({});
+const Store = require('electron-store')
 
-export default {
+const createElectronStorage = ({electronStoreOpts} = {}) => {
+  const store = new Store(electronStoreOpts || {})
+
+  return {
     getItem: (key) => {
-        return new Promise((resolve) => {
-            resolve(store.get(key));
-        });
+      return new Promise((resolve) => {
+        resolve(store.get(key))
+      })
     },
     setItem: (key, item) => {
-        return new Promise((resolve) => {
-            resolve(store.set(key, item));
-        });
+      return new Promise((resolve) => {
+        resolve(store.set(key, item))
+      })
     },
     removeItem: (key) => {
-        return new Promise((resolve) => {
-            resolve(store.delete(key));
-        });
-    },
-};
+      return new Promise((resolve) => {
+        resolve(store.delete(key))
+      })
+    }
+  }
+}
+
+export default createElectronStorage
