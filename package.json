@@ -1,6 +1,6 @@
 {
   "name": "redux-persist-electron-storage",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Redux persist adaptor for electon-store",
   "main": "lib/index.js",
   "repository": {
