@@ -1,8 +1,8 @@
 {
   "name": "redux-persist-electron-storage",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Redux persist adaptor for electon-store",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": {
     "url": "https://github.com/psperber/redux-persist-electron-storage",
     "type": "git"
@@ -10,8 +10,9 @@
   "author": "Philipp Sperber",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "standard src/* && electron-mocha"
+    "build": "babel src -d dist",
+    "test": "standard src/* && electron-mocha",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "electron-store": "^1.3.0"
@@ -23,6 +24,7 @@
     "electron": "^1.7.9",
     "electron-mocha": "^4.0.3",
     "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
     "standard": "*"
   }
 }
