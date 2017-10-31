@@ -28,8 +28,8 @@ persistStore(store, { storage: createElectronStorage(options) });
 
 ```js
 createElectronStorage({
-        electronStoreOpts: {
-          encryptionKey: 'MY_ENCRYPTION_KEY'
-        }
-      })
+  electronStoreOpts: {
+    encryptionKey: 'MY_ENCRYPTION_KEY'
+  }
+})
 ```
