@@ -1,4 +1,4 @@
-const createElectronStorage = require('../lib').default
+const createElectronStorage = require('../dist').default
 const assert = require('chai').assert
 
 describe('Initialisation', function () {
