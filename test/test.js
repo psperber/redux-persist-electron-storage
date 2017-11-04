@@ -1,8 +1,6 @@
 const createElectronStorage = require('../dist').default
 const assert = require('chai').assert
 
-console.log('hi')
-
 describe('Initialisation', function () {
   it('no args', function () {
     const storage = createElectronStorage()
