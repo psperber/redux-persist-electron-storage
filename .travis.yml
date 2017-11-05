@@ -16,7 +16,7 @@ install:
 - yarn
 
 before_script:
-- npm build
+- npm run build
 
 script:
 - xvfb-maybe npm test
