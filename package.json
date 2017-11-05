@@ -13,7 +13,7 @@
     "build": "babel src -d dist",
     "test": "electron-mocha",
     "clean": "rimraf dist",
-    "precommit": "standard src/* && npm test"
+    "precommit": "standard src/* && npm run build && npm test; npm run clean"
   },
   "dependencies": {
     "electron-store": "^1.3.0"
