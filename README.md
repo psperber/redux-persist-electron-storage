@@ -15,17 +15,27 @@ yarn add redux-persist-electron-storage
 
 To use redux-persist-electron-storage, configure redux-persist according to [its documentation](https://github.com/rt2zz/redux-persist#redux-persist).
 
-Modify the `persistStore` call as follows:
+Modify the classic redux-persist configuration as follows:
+
+- Do **not** import `redux-persist/lib/storage` anymore, as we use an alternative storage.
+- Import `redux-persist-electron-storage`:
 
 ```js
 import createElectronStorage from "redux-persist-electron-storage";
-
-// ...
-
-persistStore(store, { storage: createElectronStorage(options) });
 ```
 
-`options` is optional and can be used to pass `electron-store` options like below:
+- Modify the options for `persistReducer` in order to use the storage dedicated to Electron:
+
+```js
+const persistConfig = {
+  key: 'root',
+  storage: createElectronStorage()
+}
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+```
+
+You can pass options to `electron-store` like below:
 
 ```js
 createElectronStorage({
