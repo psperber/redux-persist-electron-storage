@@ -1,4 +1,6 @@
-const createElectronStorage = require('../dist').default
+'use strict'
+
+const createElectronStorage = require('../lib/index')
 const assert = require('chai').assert
 
 describe('Initialisation', function () {
@@ -14,6 +16,13 @@ describe('Initialisation', function () {
           encryptionKey: 'a'
         }
       })
+      assert.isObject(storage, 'created storage is not an object')
+    })
+
+    it('electronStore', function () {
+      const ElectronStore = require('electron-store')
+      const electronStore = new ElectronStore()
+      const storage = createElectronStorage({ electronStore })
       assert.isObject(storage, 'created storage is not an object')
     })
   })

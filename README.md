@@ -7,8 +7,13 @@
 Storage adaptor to use [electron-store](https://github.com/sindresorhus/electron-store) with [redux-persist](https://github.com/rt2zz/redux-persist)
 
 ## Installation
+### npm
 ```bash
-yarn add redux-persist-electron-storage
+npm i -S electron-store redux-persist-electron-storage
+```
+### yarn
+```bash
+yarn add electron-store redux-persist-electron-storage
 ```
 
 ## Usage
@@ -35,7 +40,14 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 ```
 
-You can pass options to `electron-store` like below:
+You can either pass an instance of `electron-store` or pass options like below:
+
+```js
+const electronStore = new ElectronStore()
+createElectronStorage({
+  electronStore
+})
+```
 
 ```js
 createElectronStorage({
@@ -44,3 +56,5 @@ createElectronStorage({
   }
 })
 ```
+
+**Hint**: The passed instance is preferred over passed options

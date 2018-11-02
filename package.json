@@ -1,8 +1,8 @@
 {
   "name": "redux-persist-electron-storage",
-  "version": "1.1.3",
-  "description": "Redux persist adaptor for electon-store",
-  "main": "dist/index.js",
+  "version": "2.0.0",
+  "description": "Redux persist adapter for electon-store",
+  "main": "lib/index.js",
   "repository": {
     "url": "https://github.com/psperber/redux-persist-electron-storage",
     "type": "git"
@@ -10,28 +10,29 @@
   "author": "Philipp Sperber",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d dist",
     "test": "electron-mocha",
-    "clean": "rimraf dist",
-    "precommit": "eslint src test && npm run build && npm test; npm run clean"
+    "lint": "eslint lib test"
   },
-  "dependencies": {
-    "electron-store": "^1.3.0"
+  "peerDependencies": {
+    "electron-store": "*"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
-    "eslint": "^4.10.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "electron": "^1.7.9",
-    "electron-mocha": "^4.0.3",
-    "husky": "^0.14.3",
-    "mocha": "^4.0.1",
-    "rimraf": "^2.6.2"
+    "chai": "*",
+    "electron": "*",
+    "electron-mocha": "*",
+    "electron-store": "*",
+    "eslint": "*",
+    "eslint-config-standard": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-plugin-standard": "*"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "globals": {
+      "describe": false,
+      "it": false
+    }
   }
 }
