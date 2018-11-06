@@ -1,7 +1,7 @@
 # redux-persist-electron-storage
 
 [![npm version](https://img.shields.io/npm/v/redux-persist-electron-storage.svg?style=flat-square)](https://www.npmjs.com/package/redux-persist-electron-storage)
-[![npm downloads](https://img.shields.io/npm/dt/redux-persist-electron-storage.svg?style=flat-square)](https://www.npmjs.com/package/redux-persist-electron-storage)
+[![npm downloads](https://img.shields.io/npm/dt/redux-persist-electron-storage.svg?style=flat-square)](https://www.npmjs.com/package/redux-persist-electron-storage) [![Greenkeeper badge](https://badges.greenkeeper.io/psperber/redux-persist-electron-storage.svg)](https://greenkeeper.io/)
 
 Storage adapter to use [electron-store](https://github.com/sindresorhus/electron-store) with [redux-persist](https://github.com/rt2zz/redux-persist)
 
