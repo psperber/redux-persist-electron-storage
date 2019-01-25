@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es6"],
+    "noEmit": true
+  },
+  "files": [
+    "index.d.ts",
+    "tests.ts"
+  ]
+}

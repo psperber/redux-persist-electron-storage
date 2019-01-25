@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Redux persist adapter for electon-store",
   "main": "lib/index.js",
+  "types": "./types/index.d.ts",
   "repository": {
     "url": "https://github.com/psperber/redux-persist-electron-storage",
     "type": "git"
@@ -17,6 +18,7 @@
     "electron-store": "*"
   },
   "devDependencies": {
+    "@types/electron-store": "*",
     "chai": "*",
     "electron": "*",
     "electron-mocha": "*",
@@ -26,7 +28,8 @@
     "eslint-plugin-import": "*",
     "eslint-plugin-node": "*",
     "eslint-plugin-promise": "*",
-    "eslint-plugin-standard": "*"
+    "eslint-plugin-standard": "*",
+    "typescript": "*"
   },
   "eslintConfig": {
     "extends": "standard",
