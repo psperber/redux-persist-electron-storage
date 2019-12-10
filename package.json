@@ -18,18 +18,18 @@
     "electron-store": "*"
   },
   "devDependencies": {
-    "@types/electron-store": "*",
-    "chai": "*",
-    "electron": "*",
-    "electron-mocha": "*",
-    "electron-store": "*",
-    "eslint": "*",
-    "eslint-config-standard": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-node": "*",
-    "eslint-plugin-promise": "*",
-    "eslint-plugin-standard": "*",
-    "typescript": "*"
+    "@types/electron-store": "^3.2.0",
+    "chai": "^4.2.0",
+    "electron": "^7.1.4",
+    "electron-mocha": "^8.1.2",
+    "electron-store": "^5.1.0",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "typescript": "^3.7.3"
   },
   "eslintConfig": {
     "extends": "standard",
